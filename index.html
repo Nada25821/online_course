@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduOnline - Apprendre en ligne</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom"> <!--navbar est l’élément qui représente l’identité du site.-->
+        <div class="container">   <!--container est l’élément qui contient le contenu de la page.-->
+            <a class="navbar-brand" href="index.html">EduOnline</a> <!--navbar-brand est l’élément qui représente le nom du site.-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <!--navbar-toggler est l’élément qui représente le bouton de menu.-->
+                <span class="navbar-toggler-icon"></span> <!--navbar-toggler-icon est l’élément qui représente l’icône du bouton de menu.-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!--collapse navbar-collapse est l’élément qui représente le menu.-->
+                <ul class="navbar-nav ms-auto"> <!--navbar-nav est l’élément qui représente la liste des éléments du menu.-->
+                    <li class="nav-item"> <!--nav-item est l’élément qui représente un élément du menu.-->
+                        <a class="nav-link active" href="index.html">Accueil</a>    <!--nav-link est l’élément qui représente le lien de l’élément du menu.-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Cours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="hero-section text-center"> <!--hero-section est l’élément qui représente la section principale de la page.-->
+        <div class="container">
+            <h1 class="display-4 fw-bold">Apprenez en ligne à votre rythme</h1> <!--fw: font weight / fw-bold :  texte en gras -->
+            <p class="lead">Accédez à des centaines de cours dans divers domaines</p> <!--lead est l’élément qui représente le texte principal de la page.--> 
+            <a href="register.html" class="btn btn-light btn-lg me-2">S'inscrire</a>
+            <a href="courses.html" class="btn btn-outline-light btn-lg">Explorer les cours</a>
+        </div>
+    </section> <!--section est utilisée pour regrouper des éléments ayant un thème ou un sujet commun.-->
+
+    
+    <section class="py-5"> <!--py-5 est l’élément qui représente la marge supérieure et inférieure de la section.-->
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary-custom">Cours populaires</h2> <!--mb-5 est l’élément qui représente la marge inférieure de la section.-->
+            <div class="row g-4"> <!--g-4 est l’élément qui représente l’espacement entre les colonnes.-->
+                <div class="col-md-4"> <!--col-md-4 fait partie du système de grille de Bootstrap / est l’élément qui représente la largeur de la colonne.-->
+                    <div class="card course-card h-100"> <!--h-100 définir la hauteur d'un élément à 100%-->
+                        <img src="devWeb.avif" class="card-img-top" alt="Développement Web" width="300" height="200">  
+                        <div class="card-body"> <!--card-body est l’élément qui représente le contenu de la carte.-->
+                            <h5 class="card-title">Développement Web</h5> <!--card-title est l’élément qui représente le titre de la carte.-->
+                            <p class="card-text">Apprenez à créer des sites web modernes avec HTML, CSS et JavaScript.</p> <!--card-text est l’élément qui représente le texte de la carte.-->
+                            <a href="course1.html" class="btn btn-primary-custom">
+                                <i class="bi bi-eye me-1"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card h-100">
+                        <img src="What-is-data-science-2.jpg" class="card-img-top" alt="Data Science" wixdth="300" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">Maîtrisez Python, les statistiques et le machine learning.</p>
+                            <a href="course2.html" class="btn btn-primary-custom">
+                                <i class="bi bi-eye me-1"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card course-card h-100">
+                        <img src="marketing_digital999.jpeg" class="card-img-top" alt="Marketing Digital" width="300" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Digital</h5>
+                            <p class="card-text">Découvrez les stratégies de marketing en ligne et les réseaux sociaux.</p>
+                            <a href="course3.html" class="btn btn-primary-custom">
+                                <i class="bi bi-eye me-1"></i>Voir le cours
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="courses.html" class="btn btn-secondary-custom">Voir tous les cours</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="p-4 rounded bg-white">
+                        <i class="bi bi-laptop fs-1 text-primary-custom"></i>
+                        <h3 class="mt-3">Apprentissage flexible</h3>
+                        <p>Apprenez à votre rythme, quand vous voulez et où vous voulez.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="p-4 rounded bg-white">
+                        <i class="bi bi-people fs-1 text-primary-custom"></i>
+                        <h3 class="mt-3">Experts qualifiés</h3>
+                        <p>Nos instructeurs sont des professionnels expérimentés dans leur domaine.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded bg-white">
+                        <i class="bi bi-award fs-1 text-primary-custom"></i>
+                        <h3 class="mt-3">Certifications</h3>
+                        <p>Obtenez des certificats reconnus pour booster votre carrière.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-primary-custom">Témoignages</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4"> <!--md-6 pour spécifier la largeur d'une colonne sur des écrans de taille moyenne (et plus grands).-->
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">"Les cours sur EduOnline m'ont permis d'acquérir de nouvelles compétences qui ont boosté ma carrière. Je recommande !"</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="femme.jpg" class="rounded-circle me-3" alt="Nada Berrada." width="50" height="50">
+                                <div>
+                                    <h5 class="mb-0">Nada Berrada</h5>
+                                    <small class="text-muted">Développeuse Web</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <p class="card-text">"La qualité des cours est exceptionnelle. J'ai pu appliquer directement ce que j'ai appris dans mon travail."</p>
+                            <div class="d-flex align-items-center mt-3">
+                                <img src="homme.jpg" class="rounded-circle me-3" alt="Majid Bennani." width="50" height="50">
+                                <div>
+                                    <h5 class="mb-0">Majid Bennani</h5>
+                                    <small class="text-muted">Data Scientist</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="py-5 bg-secondary-custom text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Prêt à commencer votre voyage d'apprentissage ?</h2>
+            <a href="register.html" class="btn btn-primary-custom btn-lg">S'inscrire maintenant</a>
+        </div>
+    </section>
+
+    
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>EduOnline</h5>
+                    <p>La plateforme d'apprentissage en ligne pour acquérir de nouvelles compétences et faire progresser votre carrière.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0"> <!--mb-md-0 est une classe utilitaire de Bootstrap utilisée pour définir la marge inférieure (bottom margin) d’un élément-->
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Accueil</a></li>
+                        <li><a href="courses.html" class="text-white">Cours</a></li>
+                        <li><a href="about.html" class="text-white">À propos</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled"> <!--list-unstyled est une classe utilitaire de Bootstrap utilisée pour supprimer les puces des listes non ordonnées-->
+                        <li><a href="faq.html" class="text-white">FAQ</a></li>
+                        <li><a href="#" class="text-white">Politique de confidentialité</a></li>
+                        <li><a href="#" class="text-white">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li>coursonline@gmail.com</li>
+                        <li>+212 6 38 38 17 72</li>
+                        <li>394 Boulevard Houria Mohammédia</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 EduOnline. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
