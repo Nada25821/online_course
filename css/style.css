@@ -1,28 +1,28 @@
 :root {
-    --primary-color: #2C3E50; 
-    --secondary-color: #2e6081; 
+    --primary-color: rgb(76, 3, 76); 
+    --secondary-color: #2f2380f0; 
     --light-color: #f8f9fa;
     --dark-color: #343a40;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
 }
 
 .bg-primary-custom {
-    background-color: var(--primary-color) !important;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
 .bg-secondary-custom {
-    background-color: var(--secondary-color) !important;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
 }
 
 .text-primary-custom {
-    color: var(--primary-color) !important;
+    color: var(--primary-color) ;
 }
 
 .text-secondary-custom {
-    color: var(--secondary-color) !important;
+    color: var(--secondary-color) ;
 }
 
 .btn-primary-custom {
@@ -32,19 +32,19 @@ body {
 }
 
 .btn-primary-custom:hover {
-    background-color: #2C3E50;
-    border-color: #2C3E50;
+    background-color: #a62c96;
+    border-color: rgb(103, 8, 103);
 }
 
 .btn-secondary-custom {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    color: var(--dark-color);
+    background-color: purple;
+    border-color: black;
+    color: white;
 }
 
 .btn-secondary-custom:hover {
-    background-color: #2C3E50;
-    border-color: #2e6081;
+    background-color: #a62c96;
+    border-color: #62015b;
 }
 
 .navbar {
@@ -72,17 +72,13 @@ body {
 }
 
 .footer {
-    background-color: var(--dark-color);
+    background-color: rgb(56, 10, 56);
     color: white;
 }
 
 .bi {
     font-size: 1.2rem;
     vertical-align: middle;
-}
-
-.icon-large {
-    font-size: 2rem;
 }
 
 .icon-xlarge {
